@@ -37,6 +37,9 @@ interface Geo {
 }
 
 const ReactQuery = () => {
+
+  const isFetching = useIsFetching();
+
   //   TODOS
   const {
     data: todosData,
@@ -84,7 +87,7 @@ const ReactQuery = () => {
   console.log(todosData);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* TODOS */}
       <h1 className="text-xl">TODOS</h1>
       <div className="flex flex-col gap-2">
